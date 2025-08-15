@@ -32,4 +32,3 @@ To build a **comprehensive, easy-to-navigate JavaScript reference** for study an
 ---
 > 💡 *This is a living document — notes will be updated and expanded regularly.*
 
-# JavaScript-Notes
