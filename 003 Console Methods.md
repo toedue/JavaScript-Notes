@@ -1,6 +1,6 @@
 # Console Methods
 
-The JavaScript `console` object provides various methods to output messages and data to the browser's console, which is invaluable for debugging and development. Below is a detailed explanation of the key console methods, their use cases, and examples, including styling options.
+The JavaScript `console` object provides various methods to output messages and data to the browser's console, which is invaluable for debugging and development. 
 
 ## Console Methods
 
