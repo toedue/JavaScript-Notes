@@ -51,17 +51,3 @@ document.write("<h1>Hello <span style='color: blue;'>Page</span></h1>");
 
 console.log("Hello From JS File");
 ```
-
-## Additional Considerations
-- **Best Practices**:
-  - Use `window.alert()` sparingly for critical user notifications.
-  - Prefer DOM methods (e.g., `document.getElementById().innerHTML`) over `document.write()` for dynamic content updates.
-  - Leverage `console.log()` with objects (e.g., `console.log({x: 5})`) for detailed debugging.
-- **Security**: Avoid using `document.write()` with unsanitized user input to prevent XSS (Cross-Site Scripting) vulnerabilities.
-- **Performance**: Excessive use of any output method can impact page load times or user experience.
-
-## Testing the Code
-To see the output:
-1. Save this code in a `.js` file and include it in an HTML file with a `<script>` tag.
-2. Open the HTML file in a browser.
-3. Check the alert popup, the page content, and the console (via F12) for the respective outputs.
