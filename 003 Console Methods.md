@@ -66,5 +66,4 @@ console.table(["Osama", "Ahmed", "Sayed"]);
 ## Styling Console
 - **Directive `%c`**: Allows styling of console output using CSS-like syntax. Each `%c` in the string corresponds to a CSS style passed as a subsequent argument.
 - **Use Case**: Enhances readability or highlights important messages in the console.
-- **Example**: See the `console.log()` example above with styled text.
 
