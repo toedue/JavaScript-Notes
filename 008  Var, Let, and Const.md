@@ -71,3 +71,8 @@ console.log(z) // 5 - different block
 ```
 
 ---
+
+Var: Old-school, use it if you’re stuck with legacy code, but watch that global drama!
+Let: Great for variables that might change—use it for loops or updates.
+Const: Pick this for stuff that won’t change (like constants)—just remember you can still tweak object properties or array items.
+Scope: Block scope (let and const) is your friend for avoiding weird bugs.
