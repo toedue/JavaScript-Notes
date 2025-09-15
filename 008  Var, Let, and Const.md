@@ -1,6 +1,5 @@
-# JavaScript Notes / Var, Let, and Const
+# Var, Let, and Const
 
-Hey! Let’s dive into the world of variable declarations in JavaScript with `var`, `let`, and `const`. These are the ways we set up variables, and they each have their own personality. Let’s break it down like we’re just hanging out!
 
 ## Var
 - **Redeclare**: Yep, you can redeclare it! Like `var x = 1; var x = 2;`—it just overwrites the old value. Handy but can cause mix-ups.
