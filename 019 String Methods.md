@@ -250,7 +250,7 @@ console.log(a.substring(a.length - 5, a.length - 3)) // "ch"
 console.log(a.substr(0, 6)) // "Elzero"
 console.log(a.substr(17)) // "" (beyond length)
 console.log(a.substr(-3)) // "ool"
-console.log(a.substr(-5, 2)) // "ho"
+console.log(a.substr(-5, 2)) // "ch"
 ```
 
 ---
