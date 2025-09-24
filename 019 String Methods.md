@@ -32,7 +32,7 @@ console.log(theName[2]) // "m"
 */
 
 console.log(theName.charAt(1)) // "h"
-console.log(theName.charAt(5)) // "m"
+console.log(theName.charAt(2)) // "m"
 ```
 
 ---
@@ -48,7 +48,7 @@ console.log(theName.charAt(5)) // "m"
   - Counting characters.
 */
 
-console.log(theName.length) // 9 (including spaces)
+console.log(theName.length) // 5
 ```
 
 ---
@@ -63,7 +63,7 @@ console.log(theName.length) // 9 (including spaces)
   trim Example
   - Removing leading and trailing spaces.
 */
-
+let theName = "  Ahmed  "
 console.log(theName.trim()) // "Ahmed"
 ```
 
