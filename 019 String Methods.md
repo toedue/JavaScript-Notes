@@ -198,7 +198,16 @@ console.log(a.repeat(5)) // "Elzero Web School" x5
   - Splitting into characters with limit.
 */
 
-console.log(a.split("", 6)) // ["E", "l", "z", "e", "r", "o"]
+let a = "Elzero Web School"
+
+console.log(a.split("", 6))   // ["E", "l", "z", "e", "r", "o"]
+console.log(a.split(" "))     // ["Elzero", "Web", "School"]
+console.log(a.split("e"))     // ["Elz", "ro W", "b School"]
+console.log(a.split(" ", 2))  // ["Elzero", "Web"]
+console.log(a.split("", 3))   // ["E", "l", "z"]
+console.log(a.split("o"))     // ["Elzer", " Web Sch", "l"]
+console.log(a.split(""))     // ["E", "l", "z", "e", "r", "o", " ", "W", "e", "b", " ", "S", "c", "h", "o", "o", "l"]
+console.log(a.split())       // ["Elzero Web School"]  (the whole string as one element in an array)
 ```
 
 ---
