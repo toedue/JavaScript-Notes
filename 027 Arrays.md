@@ -84,7 +84,7 @@ console.log(Array.isArray(myFriends)) // true
 
 ---
 
-## Quick Tips
+
 - **Indices**: Start at 0, and watch out for `undefined` if you go too far.
 - **Nested Access**: Double-check indices for nested arrays—mistakes like `myFriends[1][2]` (undefined) can trip you up.
 - **Mutation**: Arrays are mutable, so changing elements is easy but affects the original.
