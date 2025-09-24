@@ -306,7 +306,7 @@ let a = "Elzero Web School"
 console.log(a.endsWith("l"))           // true, last character is "l"
 console.log(a.endsWith("School"))      // true, string ends with "School"
 console.log(a.endsWith("Web"))         // false, doesn't end with "Web"
-console.log(a.endsWith("o", 10))       // true, checks first 10 characters: "Elzero Web"
+console.log(a.endsWith("o", 10))       // false, checks first 10 characters: "Elzero Web"
 console.log(a.endsWith("z"))           // false
 console.log(a.endsWith("Elzero Web School")) // true, whole string matches
 ```
