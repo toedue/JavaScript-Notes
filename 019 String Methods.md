@@ -230,7 +230,7 @@ console.log(a.length) // 17
 console.log(a.substring(2, 6)) // "zero"
 console.log(a.substring(6, 2)) // "zero" (swaps)
 console.log(a.substring(-10, 6)) // "Elzero" (starts at 0)
-console.log(a.substring(a.length - 5, a.length - 3)) // "oo"
+console.log(a.substring(a.length - 5, a.length - 3)) // "ch"
 ```
 
 ---
