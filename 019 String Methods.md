@@ -166,7 +166,7 @@ console.log(a.lastIndexOf("o")) // 15
 */
 
 console.log(a.slice(2, 6)) // "zero"
-console.log(a.slice(-5, -3)) // "oo"
+console.log(a.slice(-5, -3)) // "ch"
 ```
 
 ---
