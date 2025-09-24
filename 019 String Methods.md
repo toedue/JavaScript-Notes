@@ -12,7 +12,7 @@
   - Grabbing characters by position.
 */
 
-let theName = "  Ahmed  ".trim()
+let theName = "Ahmed"
 console.log(theName[1]) // "h"
 console.log(theName[2]) // "m"
 
