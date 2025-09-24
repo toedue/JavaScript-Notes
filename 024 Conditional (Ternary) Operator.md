@@ -113,6 +113,3 @@ theAge < 20
 - **Nesting**: Okay for a few levels, but too many get hard to follow (use `if` instead).
 - **Assignment**: Great for setting variables based on conditions.
 - **Debug**: Add `console.log()` inside to trace the flow if needed.
-
-
-Have fun with ternaries, and let me know if you need help! 😄 (It’s 12:10 AM EAT on Thursday, September 25, 2025—perfect for some late-night coding!)
