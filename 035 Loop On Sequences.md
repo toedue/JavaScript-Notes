@@ -36,11 +36,6 @@ console.log(onlyNames) // ["Osama", "Ahmed", "Sayed", "Ali"]
 
 ---
 
-### Commented Alternatives
-- **Manual Access**: The commented `console.log(myFriends[0])` lines show how you could log each item individually—tedious for long arrays!
-- **Simple Loop**: The commented `for` loop with `console.log(myFriends[i])` would print everything: `1, 2, Osama, Ahmed, 3, 4, Sayed, 6, Ali`.
-
----
 
 - **length**: Use `myFriends.length` to dynamically loop over any array size.
 - **Condition**: Add `if` checks (like `typeof`) to filter or process specific items.
