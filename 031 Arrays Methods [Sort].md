@@ -15,8 +15,41 @@
 let myFriends = [10, "Sayed", "Mohamed", "90", 9000, 100, 20, "10", -20, -10]
 console.log(myFriends) // [10, "Sayed", "Mohamed", "90", 9000, 100, 20, "10", -20, -10]
 
-console.log(myFriends.sort()) // [-10, -20, 10, 100, 20, 9000, "Mohamed", "Sayed", "90", "10"]
-// Note: Sorts as strings, so "10" > "90" because "1" > "9" in Unicode
+console.log(myFriends.sort()) // [-10, -20, 10, "10", 100, 20, "90", 9000, "Mohamed", "Sayed"]
+```
+#### JavaScript will:
+Convert everything to strings.
+Sort by Unicode order (character by character).
+
+```javascript
+["10", "Sayed", "Mohamed", "90", "9000", "100", "20", "10", "-20", "-10"]
+```
+
+Why this order?
+
+-10 then -20
+
+Compare as strings: "-10" vs "-20" → "1" < "2" → so -10 comes before -20.
+
+10 and "10" stay next to each other
+
+Number 10 vs string "10" → both compared as "10" → equal in sorting → order between them depends on implementation (stable sort in modern JS keeps original order).
+
+100, 20, "90", 9000
+
+"100" < "20" because "1" < "2".
+
+"20" < "90" because "2" < "9".
+
+"90" < "9000" because shorter string with same start comes first.
+
+Strings last: "Mohamed", "Sayed"
+
+"M" (77) < "S" (83).
+
+#### final result
+```javascript
+[-10, -20, 10, "10", 100, 20, "90", 9000, "Mohamed", "Sayed"]
 ```
 
 ---
