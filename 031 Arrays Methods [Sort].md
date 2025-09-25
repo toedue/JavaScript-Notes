@@ -65,10 +65,46 @@ Strings last: "Mohamed", "Sayed"
   - Reversing the sorted array.
 */
 
-console.log(myFriends.sort().reverse()) // ["90", "Sayed", "Mohamed", 9000, 20, 100, 10, -20, -10, "10"]
-// Reverses the string-based sort result
+console.log(myFriends.sort().reverse()) // [
+  'Sayed', 'Mohamed',
+  9000,    '90',
+  20,      100,
+  '10',    10,
+  -20,     -10
+]
+
 ```
 
+#### Numeric Sorting
+- **Default Issue**: Without a function, `sort()` compares as strings, so `10` comes before `2` (because "1" < "2"), not numerically.
+- **Fix**: Use a compare function:
+  - `(a, b) => a - b`: Sorts ascending (smallest to largest).
+  - `(a, b) => b - a`: Sorts descending (largest to smallest).
+- Example with numbers only:
+
+```javascript
+/*
+  Numeric Sort Example
+  - Applying a compare function for correct numeric order.
+*/
+
+let numbersOnly = myFriends.filter(item => !isNaN(item)).map(Number)
+console.log(numbersOnly.sort((a, b) => a - b)) // [-20, -10, 10, 20, 100, 9000, 90, 10]
+// Filters out strings, converts to numbers, sorts numerically
+```
+
+---
+
+```javascript
+/*
+  reverse Example
+  - Reversing the sorted array numerically.
+*/
+
+console.log(numbersOnly.sort((a, b) => a - b).reverse()) // [9000, 100, 20, 10, 90, -10, -20, 10]
+```
+
+---
 ---
 
 
