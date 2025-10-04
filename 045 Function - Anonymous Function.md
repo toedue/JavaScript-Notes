@@ -45,7 +45,7 @@ function sayHello() {
 document.getElementById("show").onclick = sayHello; // Triggers on button click
 
 // Anonymous Function with setTimeout
-setTimeout(function elzero() {
+setTimeout(function () {
   console.log("Good");
 }, 2000); // Logs "Good" after 2 seconds
 ```
@@ -58,14 +58,10 @@ setTimeout(function elzero() {
   - Defined with a name, assigned to the `onclick` event of an element with id `"show"`.
   - Logs "Hello Osama" when the button is clicked (assuming an HTML button with `id="show"` exists).
 - **SetTimeout with Anonymous Function**:
-  - `function elzero()` is an anonymous function (despite the name inside, it’s not accessible outside `setTimeout`).
+  - `function ()` is an anonymous function (it’s not accessible outside `setTimeout`).
   - Executes `console.log("Good")` after a 2000ms (2-second) delay.
 
 ---
-
-### Notes on `elzero` Name
-- The name `elzero` inside `setTimeout` is local to that function and doesn’t make it a named function globally. It’s still treated as anonymous in this context because it’s not declared with `function elzero` outside.
-
 #### HTML Assumption:
 ```html
 <button id="show">Click Me</button>
