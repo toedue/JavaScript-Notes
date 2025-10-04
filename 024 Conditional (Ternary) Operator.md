@@ -98,12 +98,12 @@ console.log(`Hello ${theGender === "Male" ? "Mr" : "Mrs"} ${theName}`) // Logs "
 */
 
 theAge < 20
-  ? console.log(20)
+  ? console.log(20)                   // if age < 20
   : theAge > 20 && theAge < 60
-  ? console.log("20 To 60")
+  ? console.log("20 To 60")           // else if (20 < age < 60)
   : theAge > 60
-  ? console.log("Larger Than 60")
-  : console.log("Unknown") // Logs "20 To 60" (30 is between 20 and 60)
+  ? console.log("Larger Than 60")     // else if (age > 60)
+  : console.log("Unknown");           // else  Logs "20 To 60" (30 is between 20 and 60)
 ```
 
 ---
