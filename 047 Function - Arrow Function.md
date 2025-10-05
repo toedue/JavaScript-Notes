@@ -47,41 +47,6 @@ let print = (num1, num2) => {
 console.log(print(100, 50)); // "Sum is 150"
 ```
 
-#### Your Code:
-```javascript
-/*
-  Arrow Function Example
-  - Comparing regular and arrow functions.
-*/
-
-let print = function (num1, num2) {
-  return num1 + num2;
-};
-let print = (num1, num2) => num1 + num2;
-
-console.log(print(100, 50)); // 150
-```
-- **What Happens**: 
-  - The last `print` assignment overwrites the previous one (due to redeclaration with `let`).
-  - `console.log(print(100, 50))` uses the arrow function, returning `150`.
-
----
-
-### Notes on Your Code
-- **Redeclaration**: Using `let print = ...` twice in the same scope reassigns `print`. Only the last definition (arrow function) applies. To test all, use different variable names (e.g., `print1`, `print2`).
-- **Implicit Return**: The arrow `num1 + num2` implicitly returns the sum without `return` or `{}` since it’s a single expression.
-
-#### Fixed for Testing:
-```javascript
-let printRegular = function (num1, num2) {
-  return num1 + num2;
-};
-let printArrow = (num1, num2) => num1 + num2;
-
-console.log(printRegular(100, 50)); // 150
-console.log(printArrow(100, 50)); // 150
-```
-
 ---
 
 
