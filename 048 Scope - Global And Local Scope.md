@@ -61,14 +61,19 @@ showText();
 
 ---
 
-### Key Differences
-- **var**: Function-scoped, can be redeclared in the same scope (overwrites), and has hoisting (initialized as `undefined`).
-- **let**: Block-scoped, no redeclaration in the same scope, hoisted but not initialized until the block.
-- **Shadowing**: Local variables hide global ones with the same name within their scope.
-
-#### Hoisting Note:
-- `var a` is hoisted and initialized as `undefined` globally, then assigned `1`.
-- `let b` is hoisted but not initialized until the `let b = 2` line—accessing it before throws a ReferenceError.
+The difference (var vs let):
+```javascript
+function show() {
+  var x = 10; // function scoped
+  if (true) {
+    let y = 20; // block scoped
+    var z = 30; // still function scoped
+  }
+  console.log(x); // ✅ 10
+  console.log(z); // ✅ 30 (because var ignores blocks)
+  console.log(y); // ❌ Error (because let works only inside that block)
+}
+```
 
 ---
 
