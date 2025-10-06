@@ -25,36 +25,39 @@
   - Filtering friends and even numbers.
 */
 
-// Get Friends With Name Starts With A
-let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"]
+// Get Friends With Name Starting With "A"
+let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
 
 let filteredFriends = friends.filter(function (el) {
-  return el.startsWith("A") ? true : false
-})
+  return el.startsWith("A"); // already true or false
+});
 
-console.log(filteredFriends) // ["Ahmed", "Asmaa", "Amgad"]
+console.log(filteredFriends); // ["Ahmed", "Asmaa", "Amgad"]
 
 // Get Even Numbers Only
-let numbers = [11, 20, 2, 5, 17, 10]
+let numbers = [11, 20, 2, 5, 17, 10];
 
 let evenNumbers = numbers.filter(function (el) {
-  return el % 2 === 0
-})
+  return el % 2 === 0;
+});
 
-console.log(evenNumbers) // [20, 2, 10]
+console.log(evenNumbers); // [20, 2, 10]
 
-// Test Map vs Filter (Commented)
-// let addMap = numbers.map(function (el) {
-//   return el + el;
-// });
+// Test Map vs Filter
+// Map transforms each element
+let addMap = numbers.map(function (el) {
+  return el + el;
+});
 
-// console.log(addMap); // [22, 40, 4, 10, 34, 20]
+console.log(addMap); // [22, 40, 4, 10, 34, 20]
 
-// let addFilter = numbers.filter(function (el) {
-//   return el + el;
-// });
+// Filter keeps elements based on a condition
+let addFilter = numbers.filter(function (el) {
+  return el + el > 0; // needs a condition that is true/false
+});
 
-// console.log(addFilter); // [] (empty, as el + el is always truthy)
+console.log(addFilter); // [11, 20, 2, 5, 17, 10] (all elements are kept)
+
 ```
 
 #### What Happens:
@@ -69,7 +72,7 @@ console.log(evenNumbers) // [20, 2, 10]
 
 - **Map vs Filter (Commented)**:
   - `map` transforms each element (e.g., `el + el` doubles to `[22, 40, 4, 10, 34, 20]`).
-  - `filter` keeps elements where the callback returns `true`. Since `el + el` is always a number (truthy), `filter` with it returns an empty array `[]`—it doesn’t make sense as a filter condition.
+  - `filter` keeps elements where the callback returns `true`. Since `el + el` is always a number (truthy)
 
 ---
 
