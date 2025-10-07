@@ -26,7 +26,7 @@
 let user = {
   age: 20,
   doubleAge: function () {
-    return this.age * 2
+    return this.age * 2 // this refers to the object calling the method.
   },
 }
 
