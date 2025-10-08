@@ -1,5 +1,5 @@
 ## DOM - What Is DOM
-- **Definition**: The DOM is a programming interface for HTML and XML documents. It represents the structure of a webpage as a tree of objects, where each element, attribute, and text node is a node.
+- **Definition**: The DOM (DOM stands for Document Object Model) is a programming interface for HTML and XML documents. It represents the structure of a webpage as a tree of objects, where each element, attribute, and text node is a node.
 - **Purpose**: Allows JavaScript to dynamically access, modify, or manipulate the content, structure, and styles of a webpage.
 - **Key Idea**: Think of it as a bridge between HTML and JavaScript, turning static markup into a live object model.
 
